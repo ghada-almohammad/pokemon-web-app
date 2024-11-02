@@ -14,7 +14,7 @@ const App = () => (
       <Route exact path="/pokemon"  element={<HomePage />} />
       <Route path="/" element={<Navigate to="/pokemon" replace />} />
       <Route path="/pokemon/:name" element={<PokemonDetailPage />} />
-      <Route exact path="/pokemon/Grouped"  element={<PokemonGroupedPage />} />
+      <Route path="/pokemon/groupedByHeight"  element={<PokemonGroupedPage />} />
 
       <Route path="*"   element={<h1>Page Not Found</h1>} />
     </Routes>
